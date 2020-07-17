@@ -36,7 +36,7 @@ namespace MyVet.Web
             });
 
             services.AddDbContext<DataContext>(cfg =>
-            {                                                                    
+            { 
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             //services.AddControllersWithViews();
